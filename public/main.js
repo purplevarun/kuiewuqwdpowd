@@ -6,8 +6,8 @@ $(function() {
   //   '#58dc00', '#287b00', '#a8f07a', '#4ae8c4',
   //   '#3b88eb', '#3824aa', '#a700ff', '#d300e7'
   // ];
-  var COLORS = ["red","blue","green","yellow","purple"];
-
+  var COLORS = ["red","blue","green","yellow","purple","pink","cyan","darkmagenta","gold"];
+  
   // Initialize variables
   var $window = $(window);
   var $usernameInput = $('.usernameInput'); // Input for username
@@ -23,9 +23,9 @@ $(function() {
   var typing = false;
   var lastTypingTime;
   var $currentInput = $usernameInput.focus();
-
+  // VVVVVVII
   var socket = io();
-
+  // above line is most impt for backend to frontend connection
   const addParticipantsMessage = (data) => {
     var message = '';
     if (data.numUsers === 1) {
