@@ -3,7 +3,14 @@
 * {
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+  color:red;
+  font-family: cursive;
+}
+span {
+  color : white
+}
 html {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
